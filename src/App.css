@@ -60,3 +60,16 @@ bottom: 200px;
 .two:hover{
   top:200px;
 }
+.skills{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color:#FFEA20;
+  color: #20262E;
+}
+.skills h1{
+
+  
+}
