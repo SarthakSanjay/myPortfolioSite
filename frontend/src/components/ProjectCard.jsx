@@ -27,7 +27,15 @@ const ProjectCard = ({ items }) => {
       }}>
       <div style={overlayStyle}>
       <h1 style={{width:'100%'}}>{name}</h1>
-      <button><a href={link}>visit</a></button>
+      <button style={{
+        height: '30px',
+        width: '200px',
+        marginBottom:'10px',
+        background:'none',
+        border: '2px solid violet',
+        borderRadius: '10px',
+        fontSize:'20px'
+      }}><a href={link}>visit</a></button>
       </div>
       
     </div>
