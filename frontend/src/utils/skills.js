@@ -1,3 +1,4 @@
+
 export const skills = {
     frontend: [
         {
@@ -13,7 +14,7 @@ export const skills = {
             color: 'yellow'
         },
         {
-            name: 'React Js',
+            name: 'React',
             color: 'lightblue'
         },
         {
@@ -24,8 +25,19 @@ export const skills = {
     backend: [
         {
             name: 'Node.js',
-            color: 'green'
+            color: 'green',
+            icon: "FaNodeJs"
         },
+        {
+            name: 'Express',
+            color: 'gray'
+        },
+        {
+            name: 'Git',
+            color: 'red'
+        },
+    ],
+    database:[
         {
             name: 'MongoDB',
             color: 'lime'
@@ -33,14 +45,6 @@ export const skills = {
         {
             name: 'Mongoose',
             color: 'darkgreen'
-        },
-        {
-            name: 'Express Js',
-            color: 'gray'
-        },
-        {
-            name: 'Git',
-            color: 'red'
-        },
+        }
     ]
 };
