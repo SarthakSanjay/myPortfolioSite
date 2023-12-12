@@ -1,6 +1,6 @@
 export const buttonArray = [
     {
-      name: "About",
+      name: "About Me",
       isActive: true
     },
     {
