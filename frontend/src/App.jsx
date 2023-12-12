@@ -19,7 +19,7 @@ const App = () => {
     setContent(newContent)
   }
   const updateType = (content) =>{
-      if(content === 'About'){
+      if(content === 'About Me'){
       setType(<About />)
     }
     if(content === 'Skills'){
