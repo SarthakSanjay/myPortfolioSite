@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { buttonArray } from '../utils/button';
 import Button from './Button';
-
+import Socials from './Socials';
 const Sidebar = () => {
   const [buttons, setButtons] = useState(buttonArray);
 
@@ -14,8 +14,9 @@ const Sidebar = () => {
   };
 
   return (
-    <div className='sidebar h-screen w-1/6 border-[1px] flex flex-col justify-center items-center p-[20px]'>
-      {buttons.map((item, index) => (
+    <div className=' h-screen w-1/6 p-[20px]'>
+     <div className='h-full bg-purple-900 bg-opacity-20 flex flex-col justify-center items-center rounded-lg'>
+     {buttons.map((item, index) => (
         <Button
           type={item}
           key={index}
@@ -23,6 +24,10 @@ const Sidebar = () => {
           handleClick={() => handleButtonClick(index)}
         />
       ))}
+      <div className='absolute bottom-0'>
+          <Socials />
+      </div>
+     </div>
     </div>
   );
 };
