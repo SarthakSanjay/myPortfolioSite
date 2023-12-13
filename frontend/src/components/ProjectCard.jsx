@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Button from './Button.jsx'
-
+import sc2 from '../assets/sc2.png'
 const ProjectCard = ({ item }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -19,7 +19,7 @@ const ProjectCard = ({ item }) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-      <img className='h-full w-full bg-center rounded-2xl' src={item.imgUrl} />
+      <img className='h-full w-full bg-center rounded-2xl' src={sc2} />
       <div className='h-1/4 hidden lg:flex flex-wrap gap-1  rounded-b-2xl p-[10px]'>
      
         {
