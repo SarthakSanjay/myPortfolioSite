@@ -15,12 +15,12 @@ const ProjectCard = ({ item }) => {
   return (
     
       <div
-        className='h-1/3 w-1/3 rounded-xl border-[1px] border-violet-500 text-white text-2xl bg-black relative'
+        className='h-1/3 lg:w-1/3 rounded-xl border-[1px] border-violet-500 text-white text-2xl bg-black relative'
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
       <img className='h-full w-full bg-center rounded-2xl' src={item.imgUrl} />
-      <div className='h-1/4  flex flex-wrap gap-1  rounded-b-2xl p-[10px]'>
+      <div className='h-1/4 hidden lg:flex flex-wrap gap-1  rounded-b-2xl p-[10px]'>
      
         {
             item.tech.map((eachTech,index) =>{
