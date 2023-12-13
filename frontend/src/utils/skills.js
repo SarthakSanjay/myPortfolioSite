@@ -19,8 +19,12 @@ export const skills = {
         },
         {
             name: 'Axios',
-            color: 'purple'
+            color: 'blueviolet'
         },
+        {
+            name: 'Redux',
+            color: 'violet'
+        }
     ],
     backend: [
         {
