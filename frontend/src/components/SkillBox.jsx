@@ -31,10 +31,10 @@ const SkillBox = ({ item }) => {
 
   return (
     <div
-      className='h-[100px] w-[120px] text-white border-[1px] bg-opacity-10 flex flex-col justify-center items-center rounded-lg opacity-50 hover:opacity-100'
+      className='h-[60px] w-[60px] lg:h-[100px] lg:w-[120px] text-white border-[1px] bg-opacity-10 flex flex-col justify-center items-center rounded-lg lg:opacity-50 hover:opacity-100'
     
     >
-    <div className='text-3xl flex justify-center items-center flex-col' style={{
+    <div className='text-xl lg:text-3xl flex justify-center items-center flex-col' style={{
         
         color: `${item.color}`,
         filter: `
@@ -45,7 +45,7 @@ const SkillBox = ({ item }) => {
 
       {getIcon(item.name)}
     </div>
-      <p className='text-[12px] text-white'>{item.name}</p>
+      <p className= ' text-[8px] lg:text-[12px] text-white'>{item.name}</p>
       
     </div>
   );
