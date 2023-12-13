@@ -38,7 +38,7 @@ const Sidebar = () => {
           handleClick={() => handleButtonClick(index)}
         />
       ))}
-      <div className=' absolute  bottom-0'>
+      <div className=' absolute  bottom-0 lg:bottom-14'>
           <Socials />
       </div>
      </div>
