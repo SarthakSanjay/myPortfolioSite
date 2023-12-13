@@ -17,23 +17,23 @@ const About = () => {
   return (
     <div className="h-full w-full  text-white flex flex-col justify-center items-start p-[10px] lg:p-[50px]">
       <div className="h-[90%] w-full p-[20px] lg:p-[50px] bg-black rounded-lg bg-opacity-50 ">
-        <h1 className="absolute lg:top-44 right-10 lg:static text-[20px] lg:text-[50px] font ">SARTHAK SANJAY</h1>
+        <h1 className="w-full text-center top-32 lg:text-start  relative lg:top-44  lg:static text-[20px] lg:text-[50px] font ">SARTHAK SANJAY</h1>
         <img
-        className={`h-1/6 lg:h-1/3 absolute top-38  lg:top-28 lg:right-20 rounded-[20px] ${
+        className={`h-1/6 lg:h-1/3 absolute top-14 right-32 lg:top-28 lg:right-20 rounded-[20px] ${
           isShaking ? 'animate-shake' : '' // Apply the animation class conditionally
         }`}
         src="https://avatars.githubusercontent.com/u/107864062?s=400&u=318c6449cc868deebc86c80cd2d091e165408723&v=4"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       />
-        <h2 className="flex items-center text-[15px] lg:text-[30px] relative top-14 lg:top-10 lg:static lg:bottom-6 ml-[140px] lg:ml-[100px]">
-          I'm a{" "}
+        <h2 className="hidden  items-center text-[15px] lg:text-[30px] relative top-14 lg:top-10 lg:static lg:bottom-6 ml-[140px] lg:ml-[100px]">
+          I'm a
           <span className="text-[20px] lg:text-[40px] text-orange-600">
           &nbsp;
             Fullstack Developer
           </span>
         </h2>
-        <p className="w-full lg:w-3/5 text-justify relative top-28 lg:top-10">
+        <p className="w-full lg:w-3/5 text-justify relative top-36 lg:top-10">
           <span className="text-lime-500 text-[20px]">Full-stack developer</span> and
           <span className="text-blue-400 text-[20px]"> open-source contributor </span>
           passionate about crafting innovative solutions . Proficient in 

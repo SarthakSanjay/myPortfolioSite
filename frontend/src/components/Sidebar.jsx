@@ -20,13 +20,13 @@ const Sidebar = () => {
   return (
     <>
     <div className={`h-screen ${showModal ? 'blur-xl' : '' } lg:blur-none lg:w-1/6 sm:w-full p-[20px]`}>
-    <div className='absolute h-40 w-40 text-center  top-[10%] left-[32%] \ lg:hidden'>
+    <div className='absolute  h-40 w-40 text-center  top-[10%] left-[29%]  lg:hidden'>
     <img
         className={`h-36 w-40 rounded-[20px]`}
         src="https://avatars.githubusercontent.com/u/107864062?s=400&u=318c6449cc868deebc86c80cd2d091e165408723&v=4"
 
       />
-      <h1 className='text-white text-center'>SARTHAK SANJAY</h1>
+      <h1 className='w-full my-5 text-white text-center'>SARTHAK SANJAY</h1>
     </div>
      <div className='h-full bg-purple-900 bg-opacity-20 flex flex-col  justify-center items-center rounded-lg'>
      
