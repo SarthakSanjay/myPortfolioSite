@@ -12,8 +12,12 @@ const App = () => {
   const [content , setContent] = useState('About')
    const [type ,setType] = useState(<About />)
    const [isActive , setIsActive] = useState(true)
+   const [showModal , setShowModal] = useState(false)
    const updateIsActive = () =>{
     setIsActive(prev => ! prev)
+   }
+   const updateModal = () =>{
+    setShowModal(prev => ! prev)
    }
   const updateContent = (newContent) =>{
     setContent(newContent)
@@ -38,7 +42,9 @@ const App = () => {
     updateType,
     type,
     isActive ,
-    updateIsActive
+    updateIsActive,
+    showModal,
+    updateModal
   }
 
   const handleClick = () =>{
@@ -47,8 +53,8 @@ const App = () => {
     return (
       <myContext.Provider value={sharedData}>
 
-      <div className='h-screen w-screen'  >
-      <button className='h-10 w-[100px] rounded-2xl m-2  border-[1px] text-white absolute right-0 hover:bg-white hover:text-black hover:border-black ' onClick={handleClick}>
+      <div className='h-[100%] lg:h-screen lg:w-screen   '  >
+      <button className='h-10 w-[100px] hidden lg:hidden rounded-2xl m-2  border-[1px] text-white absolute right-0 hover:bg-white hover:text-black hover:border-black ' onClick={handleClick}>
       {theme?'Minimal':"Go Nuts"}
       </button>
         {
