@@ -1,9 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from './Button.jsx'
 import sc2 from '../assets/sc2.png'
+import snake from '../assets/snake.png'
+import snkrs from '../assets/snkrs.png'
+import youtube from '../assets/youtube.png'
+// import 
 const ProjectCard = ({ item }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [image ,setImage] = useState('')
 
+  
+  useEffect(()=>{
+    if(item.name === 'FLIXON'){
+      setImage(sc2)
+    }else if(item.name === 'SNKRS'){
+      setImage(snkrs)
+    }else if(item.name === 'Snake Game'){
+      setImage(snake)
+    }else{
+      setImage(youtube)
+    }
+  })
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -19,7 +36,7 @@ const ProjectCard = ({ item }) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-      <img className='h-full w-full bg-center rounded-2xl' src={sc2} />
+      <img className='h-full w-full bg-center rounded-2xl' src={image} />
       <div className='h-1/4 hidden lg:flex flex-wrap gap-1  rounded-b-2xl p-[10px]'>
      
         {
