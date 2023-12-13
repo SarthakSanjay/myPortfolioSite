@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaNodeJs, FaHtml5, FaCss3, FaGit } from "react-icons/fa";
-import { SiAxios ,SiExpress, SiJavascript, SiMongodb, SiMongoose, SiReact } from "react-icons/si";
+import { SiAxios ,SiExpress, SiJavascript, SiMongodb, SiMongoose, SiReact , SiRedux } from "react-icons/si";
 const SkillBox = ({ item }) => {
   const getIcon = (name) => {
     switch (name.toLowerCase()) {
@@ -24,6 +24,8 @@ const SkillBox = ({ item }) => {
         return <SiExpress />;
       case 'git':
         return <FaGit />;
+      case 'redux':
+        return <SiRedux />
       default:
         return null;
     }
