@@ -11,9 +11,9 @@ export const buttonArray = [
       name: "Projects",
       isActive: false
     },
-    {
-      name: "Contribution",
-      isActive: false
-    }
+    // {
+    //   name: "Contribution",
+    //   isActive: false
+    // }
   ];
   
